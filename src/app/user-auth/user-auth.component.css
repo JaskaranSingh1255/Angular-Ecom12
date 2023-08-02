@@ -1,14 +1,50 @@
 .user-auth h1{
     margin-top: 50px;
     margin-bottom: 80px;
-    color: blueviolet;  
-    text-align: center; 
+    color:blueviolet;
+    text-align: center;
 }
 
 .user-auth {
     margin-bottom: 100px;
+    min-height: 100%;
+    padding: 60px 1rem;
 }
 .user-auth a{
     color: blueviolet;
     cursor: pointer;
+}
+mat-card{
+max-width: 600px;
+margin: 2em auto;
+text-align: center;
+max-width: 600px;
+
+}
+.header{
+  text-align: center;
+}
+.full-width{
+  width: 80%;
+}
+.forget-password{
+  padding-top: 10px;
+}
+.email-input{
+  padding-top: 10px;
+}
+.alink{
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+}
+.loginbutton1{
+  color: blueviolet;
+  height: 40px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.forgetlogin{
+  text-align: center;
 }

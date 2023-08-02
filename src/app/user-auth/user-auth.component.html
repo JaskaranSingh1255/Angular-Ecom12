@@ -27,10 +27,13 @@
   </form>
  </div>
  <div *ngIf="showLogin"  class="login">
-  <h1>User Login</h1>
+  <mat-card>
+  <h1 class="header">User Login</h1>
+
+
   <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
     <p class="error-p">{{authError}}</p>
-    <input
+ <mat-label> Email  </mat-label> <input matInput
       type="text"
       class="form-input"
       name="email"
@@ -40,8 +43,10 @@
       #email="ngModel"
       required
     />
+
     <p class="invalid-input"><span *ngIf="email.invalid && email.touched " >Please enter valid input</span></p>
-    <input
+
+    <input matInput
     type="password"
     class="form-input"
     name="password"
@@ -53,8 +58,10 @@
     required
   />
   <p class="invalid-input"><span *ngIf="password.invalid && password.touched " >Please enter valid input</span></p>
-  <button [disabled]="userLogin.invalid" class="form-button">Login</button>
+
+  <button  mat-raised-button [disabled]="userLogin.invalid" class="form-button">Login</button>
   <p>Want to Create Account ? <a (click)="openSignUp()" >Click Here</a></p>
   </form>
+</mat-card>
  </div>
 </div>

@@ -2,7 +2,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,7 +19,13 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { ReactiveFormsModule } from '@angular/forms';
+import  {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +41,8 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     UserAuthComponent,
     CartPageComponent,
     CheckoutComponent,
-    MyOrdersComponent
+    MyOrdersComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,15 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    MatToolbarModule,
+    ReactiveFormsModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
